@@ -6,7 +6,7 @@
 /*   By: pineau <pineau@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 14:13:46 by pineau            #+#    #+#             */
-/*   Updated: 2024/01/18 14:19:37 by pineau           ###   ########.fr       */
+/*   Updated: 2024/01/18 15:11:07 by pineau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ Zombie::Zombie(std::string name) : _name(name) {
 }
 
 Zombie::~Zombie(void) {
+	std::cout << this->_name << " is dead" << std::endl;
 	return ;
 }
 

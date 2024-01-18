@@ -6,7 +6,7 @@
 /*   By: pineau <pineau@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 13:28:54 by pineau            #+#    #+#             */
-/*   Updated: 2024/01/18 14:21:00 by pineau           ###   ########.fr       */
+/*   Updated: 2024/01/18 15:05:11 by pineau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,6 @@ class Zombie {
 	private:
 		std::string _name;		
 };
+
+void	randomChump(std::string name);
+Zombie	*newZombie(std::string name);
