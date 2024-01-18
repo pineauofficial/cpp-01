@@ -6,28 +6,26 @@
 /*   By: pineau <pineau@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 16:19:46 by pineau            #+#    #+#             */
-/*   Updated: 2024/01/18 16:52:35 by pineau           ###   ########.fr       */
+/*   Updated: 2024/01/18 20:03:09 by pineau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-Weapon::Weapon(std::string type) : _type(type)
-{
+Weapon::Weapon(std::string type) : _type(type) {
 	return ;
 }
 
-Weapon::~Weapon(void)
-{
+Weapon::~Weapon(void) {
 	return ;
 }
 
-void	setType(std::string type)
-{
-	this->_type = type;
+void	Weapon::setType(std::string type) {
+	_type = type;
 }
 
-std::string getType(void) const
-{
-	return (this->_type);
+std::string Weapon::getType(void) const{
+	return _type;
 }
+
+

@@ -6,7 +6,7 @@
 #    By: pineau <pineau@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/05 14:17:43 by nasamadi          #+#    #+#              #
-#    Updated: 2024/01/18 16:19:05 by pineau           ###   ########.fr        #
+#    Updated: 2024/01/18 18:19:58 by pineau           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,9 +19,10 @@ OBJ_DIR		= .objs/
 INCLUDES	= includes/
 
 SRC		=	main.cpp \
+			Weapon.cpp \
+			HumanA.cpp \
+			HumanB.cpp \
 			
-			
-
 OBJ	= $(SRC:%.cpp=$(OBJ_DIR)%.o)
 DEP = $(OBJ:.o=.d)
 

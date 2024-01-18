@@ -6,16 +6,18 @@
 /*   By: pineau <pineau@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 16:19:34 by pineau            #+#    #+#             */
-/*   Updated: 2024/01/18 16:51:43 by pineau           ###   ########.fr       */
+/*   Updated: 2024/01/18 20:03:02 by pineau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WEAPON_HPP
 # define WEAPON_HPP
 
+# include <iostream>
+
 class Weapon {
 	public:
-		Weapon(void);
+		Weapon(std::string type);
 		~Weapon(void);
 
 		std::string	getType(void) const;
