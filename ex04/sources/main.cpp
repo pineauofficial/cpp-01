@@ -6,7 +6,7 @@
 /*   By: pineau <pineau@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 20:12:20 by pineau            #+#    #+#             */
-/*   Updated: 2024/01/19 16:10:32 by pineau           ###   ########.fr       */
+/*   Updated: 2024/01/19 19:14:55 by pineau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,18 @@
 
 //--track-fds=yes
 
-void	replace_strings(std::strinf s1, std::string s2, std::ifstream infile, std::ofstream &outfile)
+std::string	fill_text(std::ifstream &infile)
 {
-	//s1 = to find
-	//s2 = to replace
+	std::string	str;
+	std::string	tmp;
 	
+	while (getline(infile, tmp))
+	{
+		str = str + tmp;
+		if (!infile.eof())
+            str = str + "\n";
+	}
+	return str;
 }
 
 int main(int argc, char **argv)
@@ -30,6 +37,7 @@ int main(int argc, char **argv)
 	std::ofstream outfile;
 	std::string nameinfile;
 	std::string nameoutfile;
+	std::string infile_text;
 	
 	nameinfile = argv[1];
 	nameoutfile = nameinfile + ".replace";
@@ -44,7 +52,9 @@ int main(int argc, char **argv)
 		return (std::cerr << "Failed to open files" << std::endl, 0);
 	}
 
-	// replace_strings(argv[2], argv[3], infile, outfile);
+	infile_text = fill_text(infile);
+	
+	std::cout << infile_text << std::endl;
 	
 	outfile.close();
 	infile.close();
