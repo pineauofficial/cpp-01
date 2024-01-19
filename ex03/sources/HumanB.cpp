@@ -6,7 +6,7 @@
 /*   By: pineau <pineau@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 16:20:25 by pineau            #+#    #+#             */
-/*   Updated: 2024/01/18 20:04:53 by pineau           ###   ########.fr       */
+/*   Updated: 2024/01/19 19:08:10 by pineau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,10 @@ HumanB::~HumanB(void) {
 }
 
 void	HumanB::attack(void) const{
-	std::cout << _name << " attacks with his " << _weapon->getType() << std::endl;
+	if (!_weapon)
+		std::cout << _name << " attack with his big D." << std::endl;
+	else
+		std::cout << _name << " attacks with his " << _weapon->getType() << std::endl;
 }
 
 void	HumanB::setWeapon(Weapon &weapon) {
