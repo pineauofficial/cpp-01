@@ -6,7 +6,7 @@
 /*   By: pineau <pineau@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/20 14:39:21 by pineau            #+#    #+#             */
-/*   Updated: 2024/01/20 14:45:05 by pineau           ###   ########.fr       */
+/*   Updated: 2024/01/20 15:27:25 by pineau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int main(void) {
 	harl.complain("info");
 	harl.complain("warning");
 	harl.complain("error");
+	harl.complain("wrong");
 	
 	return (0);
 }

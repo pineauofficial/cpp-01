@@ -6,7 +6,7 @@
 /*   By: pineau <pineau@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/20 14:39:29 by pineau            #+#    #+#             */
-/*   Updated: 2024/01/20 15:18:47 by pineau           ###   ########.fr       */
+/*   Updated: 2024/01/20 15:23:54 by pineau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Harl::~Harl(void) {
 }
 
 void	Harl::complain(std::string level){
-	void(Harl::*ptr[4])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+	void(Harl::*ptr[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 	std::string	levels[4] = {"debug", "info", "warning", "error"};
 	int	i = 0;
 	int find = 0;
