@@ -6,7 +6,7 @@
 /*   By: pineau <pineau@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 14:13:31 by pineau            #+#    #+#             */
-/*   Updated: 2024/01/19 14:26:37 by pineau           ###   ########.fr       */
+/*   Updated: 2024/01/20 14:27:48 by pineau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 
 #include <iostream>
 #include <fstream>
-#include <fstream>
+#include <sys/stat.h>
 
 #endif
